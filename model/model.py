@@ -1,16 +1,5 @@
 import numpy as np
 
-"""
-        Lớp SVM dùng để cài đặt Soft-margin Support Vector Machine bằng NumPy
-        Mục tiêu:
-        - Tự xây dựng mô hình SVM, không dùng sklearn.svm.SVC 
-        - Sử dụng hinge loss và regularization theo công thức Soft-margin SVM
-        - Huấn luyện mô hình bằng phương pháp Stochastic Gradient Descent (SGD)
-
-        Nhãn sử dụng:
-        - normal = -1
-        - pneumonia = 1
-"""
 class SVM:
     def __init__(self, C: float = 1.0, lr: float = 0.0001, epoch: int = 5):
         """
