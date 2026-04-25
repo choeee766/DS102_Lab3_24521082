@@ -29,7 +29,7 @@ def collect(split: str = "train", base_dir: str = "chest_xray"):
         img_path = os.path.join(normal_dir, img_file)
         img = cv.imread(img_path)
         if img is None:
-            print("Cannot read:", img_path)
+            print("Không thể đọc ảnh:", img_path)
             continue
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = cv.resize(img, (128, 128), interpolation=cv.INTER_LINEAR_EXACT)
@@ -43,7 +43,7 @@ def collect(split: str = "train", base_dir: str = "chest_xray"):
         img_path = os.path.join(pneu_dir, img_file)
         img = cv.imread(img_path)
         if img is None:
-            print("Cannot read:", img_path)
+            print("Không thể đọc ảnh:", img_path)
             continue
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = cv.resize(img, (128, 128), interpolation=cv.INTER_LINEAR_EXACT)
