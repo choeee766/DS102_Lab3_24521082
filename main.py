@@ -114,11 +114,11 @@ def plot_comparison(result_1, result_2):
 
 def main():
     """
-    - Đọc dữ liệu ảnh.
-    - Chuẩn hóa dữ liệu.
-    - Chạy SVM tự cài đặt.
-    - Chạy SVM thư viện.
-    - So sánh kết quả bằng biểu đồ cột.
+    - Đọc dữ liệu ảnh
+    - Chuẩn hóa dữ liệu
+    - Chạy SVM tự cài đặt
+    - Chạy SVM thư viện
+    - So sánh kết quả bằng biểu đồ cột
     """
     X_train, y_train = collect("train")
     X_test, y_test = collect("test")
